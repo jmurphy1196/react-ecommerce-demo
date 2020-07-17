@@ -19,7 +19,7 @@ export default class Navbar extends Component {
 
 
         return(
-            <div className='navbar navbar-expand-sm bg-primary navbar-dark px-sm-5'>
+            <NavWrapper className='navbar navbar-expand-sm bg-primary navbar-dark px-sm-5'>
                 <Link to='/'>
                 
                     <img src={logo} alt='store' className='navbar-brand' width='60' />
@@ -29,7 +29,7 @@ export default class Navbar extends Component {
                 <ul className='navbar-nav align-items-center'>
                     <li className='nav-item ml-5'>
                         <Link to='/' className='nav-link'>
-                            Products
+                            products 
                         </Link>
                         
                     </li>
@@ -43,10 +43,21 @@ export default class Navbar extends Component {
                        </span>
                     </ButtonContainer> 
                </Link>
-            </div>
+            </NavWrapper>
         )
     }
 
 
 }
 
+
+const NavWrapper = styled.nav`
+
+        background-color: var(--mainBlue) !important;
+        .nav-link{
+            color: var(--mainWhite) !important;
+            font-size: 1.3rem;
+            text-transform: capitalize !important;
+        }
+`
+;
