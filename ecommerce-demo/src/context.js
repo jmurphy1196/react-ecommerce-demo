@@ -22,6 +22,7 @@ import {storeProducts, detailProduct} from './data';
     addToCart = () => {
         console.log('hello from cart');
     }
+ 
     
     render() {
         return (
