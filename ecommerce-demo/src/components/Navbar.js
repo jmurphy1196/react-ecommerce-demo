@@ -29,7 +29,7 @@ export default class Navbar extends Component {
                 <ul className='navbar-nav align-items-center'>
                     <li className='nav-item ml-5'>
                         <Link to='/' className='nav-link'>
-                            products 
+                            store 
                         </Link>
                         
                     </li>
@@ -58,6 +58,13 @@ const NavWrapper = styled.nav`
             color: var(--mainWhite) !important;
             font-size: 1.3rem;
             text-transform: capitalize !important;
+
         }
+        .nav-link:hover{
+            transform: scale(1.1);
+            
+        }
+
+
 `
 ;

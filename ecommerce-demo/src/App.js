@@ -4,11 +4,12 @@ import {Switch, Route} from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 
-import Cart from './components/Cart';
+import Cart from './components/cart';
 import Default from './components/Defualt';
 import Details from './components/Details';
 import ProductList from './components/ProductList';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Model from './components/Model';
 
 
 
@@ -28,9 +29,10 @@ class App extends Component {
       <Switch>
         <Route exact path='/'component={ProductList} />
         <Route path='/details'component={Details} />
-        <Route path='/store'component={Cart} />
+        <Route path='/cart'component={Cart} />
         <Route component={Default} />
       </Switch>
+      <Model />
     
    </React.Fragment>
   );
